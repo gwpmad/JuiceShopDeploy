@@ -42,7 +42,7 @@ jobs:
         run: docker build -t mytest/mytest . 
 
       - name: Scanning image with snyk 
-        run: snyk container test mytest/mytest --file=Dockerfile 
+        run: snyk container test mytest/mytest --file=Dockerfile --severity-threshold=high
       
       - name: Heroku configure 
         run: | 
