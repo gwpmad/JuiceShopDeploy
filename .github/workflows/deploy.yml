@@ -21,19 +21,19 @@ jobs:
         with:
           node-version: "16"
 
-      # - name: clone Juice Shop 
-      #   run: git clone https://github.com/juice-shop/juice-shop.git
+      - name: clone Juice Shop 
+        run: git clone https://github.com/juice-shop/juice-shop.git
 
-      # - name: run npm install 
-      #   run : npm install 
-      #   working-directory: juice-shop
+      - name: run npm install 
+        run : npm install 
+        working-directory: juice-shop
 
-      # - name: install semgrep 
-      #   run: python3 -m pip install semgrep
+      - name: install semgrep 
+        run: python3 -m pip install semgrep
 
-      # - name: Run Static Analysis scan 
-      #   run: semgrep --config=auto .
-      #   working-directory: juice-shop
+      - name: Run Static Analysis scan 
+        run: semgrep --config=auto .
+        working-directory: juice-shop
       
       # - name: do npm install
       #   run: npm install -g snyk heroku
